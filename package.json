@@ -1,5 +1,5 @@
 {
-  "name": "typescipt-package-poc",
+  "name": "@manishasirjan/typescript-package",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,7 +10,7 @@
     "lint": "tslint -p tsconfig.json"
   },
   "keywords": [],
-  "author": "",
+  "author": "manisha",
   "license": "ISC",
   "devDependencies": {
     "@types/jest": "^25.2.1",
@@ -26,5 +26,9 @@
   ],
   "publishConfig": {
     "registry":"https://npm.pkg.github.com/"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Manishasrijan/typescriptpackage-poc.git"
+    }
 }
