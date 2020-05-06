@@ -1,34 +1,38 @@
 {
   "name": "@manishasirjan/typescript-package",
   "version": "1.0.0",
-  "description": "",
+  "description": "A nice greeter",
   "main": "index.js",
+  "types": "index.d.ts",
   "scripts": {
     "test": "jest --config jestconfig.json",
     "build": "tsc",
     "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
-    "lint": "tslint -p tsconfig.json"
+    "lint": "tslint -p tsconfig.json",
+    "prepare" : "npm run build",
+    "prepublishOnly" : "npm test && npm run lint",
+    "preversion" : "npm run lint",
+    "version" : "npm run format && git add -A src",
+    "postversion" : "git push && git push --tags"
   },
-  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Manishasrijan/typescriptpackage-poc.git"
+  },
+  "keywords": ["Hello", "Greeter"],
   "author": "manisha",
   "license": "ISC",
+  "homepage": "https://github.com/Manishasrijan/typescriptpackage-poc/blob/master/README.md#my-awesome-greeter",
   "devDependencies": {
     "@types/jest": "^25.2.1",
-    "jest": "^26.0.1",
+    "jest": "^25.5.4",
     "prettier": "^2.0.5",
-    "ts-jest": "^25.5.0",
+    "ts-jest": "^25.4.0",
     "tslint": "^6.1.2",
     "tslint-config-prettier": "^1.18.0",
     "typescript": "^3.8.3"
   },
   "files": [
     "lib/**/*"
-  ],
-  "publishConfig": {
-    "registry":"https://npm.pkg.github.com/"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Manishasrijan/typescriptpackage-poc.git"
-    }
+  ]
 }
