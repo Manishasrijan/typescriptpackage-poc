@@ -23,7 +23,7 @@
     "Hello",
     "Greeter"
   ],
-  "author": "manisha",
+  "author": "manishasrijan",
   "license": "ISC",
   "homepage": "https://github.com/Manishasrijan/typescriptpackage-poc/blob/master/README.md#my-awesome-greeter",
   "devDependencies": {
