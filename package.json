@@ -2,8 +2,8 @@
   "name": "@manishasirjan/typescript-package",
   "version": "1.0.0",
   "description": "A nice greeter",
-  "main": "index.js",
-  "types": "index.d.ts",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "scripts": {
     "test": "jest --config jestconfig.json",
     "build": "tsc",
